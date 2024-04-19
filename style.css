@@ -1,0 +1,798 @@
+@charset "utf-8";
+
+/* font-family: 'Knewave', 'Roboto', cursive, sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:wght@400;500;700&display=swap");
+
+/* Pretendard Variable */
+@import url("./common/pretendardvariable-dynamic-subset.css");
+
+/* 변수선언 */
+@import url(./common/variable.css);
+
+/* pc버젼 */
+
+/****************** main ******************/
+/********* section1 .m-banner *********/
+
+main .m-banner {
+  width: 100%;
+  margin-top: 9vw;
+  text-align: center;
+}
+main .m-banner h3 {
+  font-family: var(--font-family-point);
+  font-size: var(--font-size-50);
+}
+main .m-banner h2 {
+  font-weight: 700;
+  font-size: var(--font-size-230);
+  letter-spacing: -5px;
+}
+main .m-banner .banner {
+  width: 100%;
+  height: 100vh;
+  text-indent: -999999px;
+  background: url(./images/me1.gif) no-repeat 51.8% 22% / 38.2%,
+    url(./images/txt-eyes.png) no-repeat 32% 15% / 9%,
+    url(./images/hand.gif) no-repeat 81% 24% / 18%,
+    url(./images/txt-hands.png) no-repeat 80% 18% / 6%,
+    url(./images/txt-creative.png) no-repeat 31.5% 38% / 6.3%,
+    url(./images/idea1.gif) no-repeat 20% 32% / 15%,
+    url(./images/txt-coding.png) no-repeat 76% 44% / 9.5%,
+    url(./images/txt-me.gif) no-repeat 76% 65% / 20%,
+    url(./images/idea2.gif) no-repeat 28% 72% / 11%,
+    url(./images/star3.png) no-repeat 27% 57.5% / 2%,
+    url(./images/txt-dreams.png) no-repeat 39% 73% / 5%,
+    url(./images/txt-smlie.png) no-repeat 56% 42% / 3%,
+    url(./images/line1.png) no-repeat 43% 87% / 26%;
+}
+
+/********* section1 .m-banner txt *********/
+main .m-banner .m-txt {
+  text-align: left;
+  font-family: var(--font-family-p);
+  font-size: var(--font-size-18);
+  margin-top: 3vw;
+  margin-left: 7vw;
+  width: 80%;
+  display: flex;
+
+  position: relative;
+}
+
+main .m-banner .m-txt h3 {
+  text-align: left;
+  font-family: var(--font-family-p);
+  font-size: var(--font-size-45);
+  width: 25%;
+}
+
+main .m-banner .m-txt .p-text p {
+  font-size: var(--font-size-32);
+  margin-top: 0.5vw;
+  line-height: 60px;
+}
+
+main .m-banner .m-txt .p-text p .block {
+  display: block;
+}
+
+main .m-banner .m-txt img {
+  width: 25.8%;
+  position: absolute;
+  bottom: 6vw;
+  left: 23%;
+}
+
+/* section1 .m-banner 타이틀 이벤트 */
+.split-lines {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.split-lines .line-mask {
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.split-lines .line-mask .line {
+  transform-origin: top left;
+  transform: rotate(0deg);
+}
+
+/* section1 .m-banner txt 미디어쿼리 */
+@media screen and (max-width: 1700px) {
+  main .m-banner .m-txt h3 {
+    font-size: var(--font-size-32);
+  }
+
+  main .m-banner .m-txt .p-text p {
+    font-size: var(--font-size-27);
+    margin-top: -0.5vw;
+    line-height: 50px;
+  }
+
+  main .m-banner .m-txt img {
+    bottom: 6.6vw;
+    left: 24%;
+  }
+}
+
+/* 버튼스타일 */
+.button {
+  --duration: 0.5s;
+  --move-hover: -4px;
+
+  padding: 16px 32px;
+  color: #fff;
+  font-size: var(--font-size-28);
+  letter-spacing: 0.7px;
+  font-weight: 700;
+  line-height: 1.5rem;
+  border-radius: 24px;
+  display: block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+
+  background: #000;
+  color: #fff;
+  box-shadow: var(--shadow);
+  transform: translateY(var(--y));
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+}
+
+.button div {
+  display: flex;
+}
+
+.button div span {
+  display: block;
+  backface-visibility: hidden;
+  font-style: normal;
+}
+
+.button div span:nth-child(1) {
+  --d: 0.05s;
+}
+
+.button div span:nth-child(2) {
+  --d: 0.1s;
+}
+
+.button div span:nth-child(3) {
+  --d: 0.15s;
+}
+
+.button div span:nth-child(4) {
+  --d: 0.2s;
+}
+
+.button div span:nth-child(5) {
+  --d: 0.25s;
+}
+
+.button div span:nth-child(6) {
+  --d: 0.3s;
+}
+
+.button div span:nth-child(7) {
+  --d: 0.35s;
+}
+
+.button div span:nth-child(8) {
+  --d: 0.4s;
+}
+
+.button div span:nth-child(9) {
+  --d: 0.45s;
+}
+
+.button div span:nth-child(10) {
+  --d: 0.5s;
+}
+
+.button div span:nth-child(11) {
+  --d: 0.55s;
+}
+
+.button:hover {
+  --y: var(--move-hover);
+  --move: -4px;
+}
+
+.button:hover span {
+  animation: move var(--duration) linear var(--d);
+}
+
+main .m-banner .m-txt .p-text .button {
+  margin-top: 5vw;
+  width: 220px;
+  height: 50px;
+  color: #fff;
+  border-radius: 30px;
+  background: #000 url(./images/arrow2.png) no-repeat 90% 50% / 20px;
+}
+
+@keyframes move {
+  40% {
+    transform: translateY(var(--move));
+    text-shadow: var(--shadow-active);
+  }
+}
+
+@keyframes smoke {
+  45%,
+  55% {
+    filter: blur(var(--blur));
+  }
+
+  50%,
+  50.1% {
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(var(--move)) translateY(var(--move-y));
+  }
+
+  50.1% {
+    transform: translateX(calc(var(--move) * -1));
+  }
+}
+
+@keyframes drive {
+  40% {
+    opacity: 1;
+  }
+
+  55% {
+    transform: skewX(var(--skew)) translateX(var(--move));
+  }
+
+  56% {
+    transform: skewX(var(--skew-fast)) translateX(calc(var(--move) * -1));
+  }
+
+  55%,
+  56% {
+    opacity: 0;
+  }
+
+  75% {
+    transform: skewX(var(--skew));
+  }
+
+  85% {
+    transform: skewX(var(--skew-bounce));
+  }
+}
+
+/* 버튼스타일 미디어쿼리 */
+@media screen and (max-width: 1700px) {
+  .button {
+    font-size: var(--font-size-25);
+    line-height: 1.3rem;
+  }
+}
+
+/********* section2 .slide *********/
+main .slide {
+  width: 100%;
+  height: 150vh;
+  margin-top: 12vw;
+
+  display: flex;
+  overflow: hidden;
+}
+
+main .slide .slidebox {
+  width: 100%;
+  height: 150vh;
+
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+main .slide .slidebox h2 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 180vh;
+
+  font-size: var(--font-size-350);
+  font-weight: 700;
+  letter-spacing: -10px;
+}
+
+main .slide #slide1 {
+  background-color: #000;
+  color: #fff;
+  transform: translateX(0);
+  transition: 2.3s;
+  transition-delay: 2.5s;
+}
+
+/* 마우스 이벤트 전엔 숨김 페이지 */
+main .slide #slide2 {
+  background: #fff url(./images/me2.gif) no-repeat 48% 30% / 35%;
+
+  width: 0;
+  overflow: hidden;
+  transform: translateX(100%);
+  transition: 2s;
+}
+
+.slide.start #slide2 {
+  width: 100%;
+  transform: translateX(-100%);
+  position: sticky;
+  top: 0;
+  height: 150vh;
+}
+
+.slide.start #slide1 {
+  transform: translateX(-100%);
+}
+
+/********* section3-1 .myWeb 공통 *********/
+main .myWeb {
+  width: 100%;
+}
+
+main .myWeb .p-title {
+  font-family: var(--font-family-p);
+  font-size: var(--font-size-36);
+  font-weight: 700;
+  margin-left: var(--margin);
+}
+
+main .myWeb .grayText {
+  color: #000;
+  opacity: 0.6;
+  margin-left: var(--margin);
+  margin-bottom: 25px;
+}
+
+main .myWeb .web-txt {
+  width: 100%;
+  height: 18vh;
+
+  position: absolute;
+  bottom: 0;
+}
+
+main .myWeb .web-txt h3 {
+  font-size: var(--font-size-20);
+  font-weight: 700;
+}
+
+main .myWeb .web-txt p {
+  font-size: var(--font-size-18);
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+main .myWeb .web:hover {
+  color: var(--color-point);
+}
+
+/********* section3-1 .myWeb1 *********/
+
+main #myWeb {
+  width: 100%;
+  background-color: #000;
+  padding-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+main #myWeb .p-title,
+main #myWeb .grayText {
+  color: #fff;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+main .myWeb1 {
+  width: 90%;
+  height: 60vh;
+  margin: 0 auto 5vw;
+
+  display: flex;
+  gap: 10px;
+}
+
+main .myWeb1 .web {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+
+  position: relative;
+  background-color: aliceblue;
+}
+
+main .myWeb1 .web1 {
+  background: url(./images/img-kt1.jpg) no-repeat 50% / cover;
+}
+
+main .myWeb1 .web1:hover {
+  background: url(./images/img-kt2.jpg) no-repeat 50% / cover;
+}
+
+main .myWeb1 .web2 {
+  background: url(./images/img-rolly1.jpg) no-repeat 50% / cover;
+}
+
+main .myWeb1 .web2:hover {
+  background: url(./images/img-rolly2.jpg) no-repeat 50% / cover;
+}
+
+main .myWeb1 .web a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/********* section3-2 .myWeb2 *********/
+main .myWeb2 {
+  width: 100%;
+  height: 80vh;
+
+  display: flex;
+}
+
+main .myWeb2 .web {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+
+  position: relative;
+}
+
+main .myWeb2 .web {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+
+  position: relative;
+}
+
+main .myWeb2 .web a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+main .myWeb2 .web1 {
+  background: url(./images/img-tim1.jpg) no-repeat 50% / cover;
+}
+
+main .myWeb2 .web1:hover {
+  background: url(./images/img-tim2.jpg) no-repeat 50% / cover;
+}
+
+main .myWeb2 .web2 {
+  background: url(./images/img-vs1.jpg) no-repeat 50% / cover;
+}
+
+main .myWeb2 .web2:hover {
+  background: url(./images/img-vs2.jpg) no-repeat 50% / cover;
+}
+
+main .myWeb2 .web3 {
+  background: url(./images/img-am1.jpg) no-repeat 50% / cover;
+}
+
+main .myWeb2 .web3:hover {
+  background: url(./images/img-am2.jpg) no-repeat 50% / cover;
+}
+
+main .myWeb2 .web4 {
+  background: url(./images/img1.jpg) no-repeat 50% / cover;
+  border-right: none;
+}
+
+main .myWeb2 .web4:hover {
+  background: url(./images/img2.jpg) no-repeat 50% / cover;
+}
+
+/********* section4 .career *********/
+main .career {
+  width: 100%;
+  padding-top: 10vw;
+  overflow: hidden;
+
+  position: relative;
+}
+
+main .career h2 {
+  font-family: var(--font-family-point);
+  font-size: var(--font-size-150);
+  text-align: center;
+}
+
+/* 스크롤시 선이 나타나는 이벤트 */
+
+main .career .obj {
+  width: 4.5rem;
+  height: 22.6875rem;
+  fill: none;
+  stroke: #000;
+  stroke-width: 3px;
+
+  position: absolute;
+  left: 50%;
+  top: 23vw;
+  transition: 1s ease-in;
+}
+
+main .career .careerBox {
+  width: 100%;
+  height: 100vh;
+  margin-top: 23vw;
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(2, 1fr);
+}
+
+main .career .careerBox .imgBox {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+}
+
+main .career .careerBox .imgBox .careerImg {
+  display: block;
+  width: 50%;
+  min-width: 200px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main .career .careerBox .txtBox {
+  width: 100%;
+}
+
+main .career .careerBox .txtBox .jobBox {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  height: 7vw;
+
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+main .career .careerBox .txtBox .jobBox:hover {
+  opacity: 1;
+  transform: translateX(16px);
+}
+
+main .career .careerBox .txtBox .jobBox h3 {
+  font-weight: 500;
+  font-size: var(--font-size-70);
+}
+
+main .career .careerBox .txtBox .jobBox .p-txt {
+  font-family: var(--font-family-p);
+}
+
+main .career .careerBox .txtBox .jobBox .p-txt .title {
+  font-size: var(--font-size-36);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/********* section5 .skill *********/
+
+main .skill {
+  width: 100%;
+  overflow: hidden;
+}
+
+main .skill .speaker {
+  font-size: var(--font-size-30);
+  margin-left: 5vw;
+  line-height: 1.6;
+}
+
+main .skill .speaker .line {
+  width: 30%;
+  height: 5vw;
+  text-indent: -99999px;
+  background: url(./images/Union2.png) no-repeat 0 0 / 50%;
+}
+
+main .skill .skillTitle {
+  margin-left: 5vw;
+  width: 100%;
+  height: 10vw;
+  font-family: var(--font-family-point);
+  font-size: var(--font-size-80);
+
+  display: flex;
+}
+
+main .skill .skillTitle h2 {
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+main .skill .skillTitle img {
+  width: 8vw;
+  aspect-ratio: 3/4;
+  align-self: flex-end;
+}
+
+main .skill .skillBox {
+  width: 90%;
+  margin: 50px auto;
+
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 20px;
+}
+
+main .skill .skillBox .tool {
+  padding: 70px 60px;
+  border: 1px solid #000;
+  border-radius: 20px 0 0 0;
+}
+
+main .skill .skillBox .tool:nth-child(2),
+main .skill .skillBox .tool:nth-child(3) {
+  background-color: #000;
+  color: #fff;
+}
+
+main .skill .skillBox .tool h3 {
+  font-size: var(--font-size-36);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main .skill .skillBox .tool .margin-top {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+main .skill .skillBox .tool p {
+  font-size: var(--font-size-18);
+  margin-bottom: 15px;
+  line-height: var(--font-size-30);
+}
+
+main .skill .skillBox .tool .toolBox {
+  display: flex;
+  gap: 20px;
+}
+
+main .skill .skillBox .tool .toolBox h4 {
+  font-size: var(--font-size-20);
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+
+main .skill .skillBox .tool .tool-adobe .adobe {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: var(--font-size-20);
+  line-height: 1.8;
+  font-weight: 700;
+  display: flex;
+}
+
+main .skill .skillBox .tool .tool-adobe .adobe .adobe-box {
+  margin-right: 20px;
+}
+
+main .skill .skillBox .tool .tool-adobe img {
+  width: 1.25rem;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+main .skill .skillBox .tool .tool-adobe .block {
+  display: block;
+}
+
+/* section5 .skill 미디어쿼리 */
+@media screen and (max-width: 1700px) {
+  main .skill .skillBox .tool .toolBox h4 {
+    font-size: var(--font-size-20);
+    width: 7vw;
+    height: 35px;
+  }
+
+  main .skill .skillBox .tool .tool-adobe .adobe {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    align-items: center;
+  }
+
+  main .skill .skillBox .tool .tool-adobe .adobe .adobe-box {
+    margin-right: 20px;
+  }
+
+  main .skill .skillBox .tool .tool-adobe .block {
+    display: inline;
+  }
+}
+
+/********* section6 .answer *********/
+main .answer {
+  width: 100%;
+  margin-top: 13vw;
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+}
+main .answer h2 {
+  font-family: var(--font-family-point);
+  font-size: var(--font-size-150);
+  line-height: 1.2;
+}
+
+main .answer .obj {
+  width: 4.5rem;
+  height: 17.5625rem;
+  fill: none;
+  stroke: #000;
+  stroke-width: 3px;
+  margin: 2vw auto;
+
+  transition: 1s ease-in;
+}
+
+main .answer p {
+  font-size: var(--font-size-24);
+  font-weight: 700;
+  margin-bottom: 13vw;
+}
+
+main .answer img {
+  width: 40%;
+
+  position: absolute;
+  bottom: -15vw;
+  right: 0;
+
+  transition: 1.2s ease-in-out;
+  transform: translateY(30vw);
+}
+
+main .answer:hover img {
+  transform: translateY(0);
+}

@@ -1,0 +1,700 @@
+@charset "utf-8";
+
+/* font-family: 'Knewave', 'Roboto', cursive, sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:wght@400;500;700&display=swap");
+
+/* Pretendard Variable */
+@import url("../common/pretendardvariable-dynamic-subset.css");
+
+/* 변수선언 */
+@import url(../common/variable.css);
+
+/* PC기준 */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  width: 100%;
+  font-family: var(--font-family-p);
+
+  display: flex;
+}
+
+/* 공통 */
+.block {
+  display: block;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* -- 메인 오른쪽 영역 -- */
+
+.right {
+  width: 31.2%;
+  height: 100vh;
+  overflow: hidden;
+
+  position: fixed;
+  top: 80px;
+  right: 0;
+}
+
+.right .r-wrapper {
+  width: 100%;
+  border-bottom: #000 1px solid;
+}
+
+.right .r-wrapper .wrapper1 {
+  width: 77%;
+  margin: 3vw auto 0;
+}
+
+.right .r-wrapper h4 {
+  font-size: var(--font-size-27);
+  font-weight: 700;
+  margin: 2px 0 0.8vw;
+}
+
+.right .r-wrapper p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.right .r-wrapper p:first-child {
+  font-family: var(--font-family-title);
+}
+
+.right .r-wrapper .txt {
+  margin: 1.8vw 0;
+}
+
+.right .r-wrapper .txt p {
+  font-size: var(--font-size-17);
+  margin-bottom: 6px;
+}
+.right .r-wrapper .txt p:first-child {
+  font-size: var(--font-size-15);
+  font-weight: 600;
+}
+
+.right .r-wrapper .txt .bold {
+  display: inline-block;
+  width: 25%;
+  font-size: var(--font-size-17);
+}
+
+.right .r-wrapper .link-box {
+  width: 80%;
+  height: 55px;
+  margin: 0 auto 3vw;
+  color: #fff;
+  font-size: var(--font-size-18);
+  line-height: 55px;
+  text-align: center;
+
+  background: #000 url(./images/go_arrow_wt.png) no-repeat 66% 32% / 3%;
+  border: 1px solid #000;
+}
+
+.right .r-wrapper .link-box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.right .r-wrapper .link-box:hover {
+  background: #fff url(./images/go_arrow_bk.png) no-repeat 66% 32% / 3%;
+  color: #000;
+}
+
+.right .r-wrapper .wrapper1 li {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.right .r-wrapper .wrapper1 .title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-22);
+  font-weight: 600;
+}
+
+.right .r-wrapper .wrapper1 .skill .title {
+  margin-bottom: 8px;
+}
+
+.right .r-wrapper .wrapper1 .tool {
+  margin: 1.5vw auto;
+  display: flex;
+  gap: 1vw;
+}
+
+.right .r-wrapper .wrapper1 .tool .img {
+  display: flex;
+}
+
+.right .r-wrapper .wrapper1 .tool .img li {
+  width: 70%;
+}
+.right .r-wrapper .wrapper1 .tool .img li img {
+  width: 80%;
+}
+
+/* ---------- 메인 왼쪽 영역 ---------- */
+
+/* 스크롤바 커스텀 */
+
+.left::-webkit-scrollbar {
+  width: 18px;
+}
+
+.left::-webkit-scrollbar-track {
+  background-color: #fff;
+  border: #000 1px solid;
+}
+
+.left {
+  width: 68.8%;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+/* 메인배너 */
+.left .m-banner {
+  width: 100%;
+  height: 91vh;
+  text-indent: -999999px;
+  background: url(./images/vans_banner.png) no-repeat 50% 80px / 100%;
+}
+
+.left .m-title {
+  width: 90%;
+  margin: 3vw auto 5vw;
+}
+
+.left .m-title h3 {
+  font-size: var(--font-size-85);
+  font-weight: 700;
+  margin-bottom: -0.5vw;
+}
+
+.left .m-title .point-txt {
+  font-family: var(--font-family-point);
+  letter-spacing: 0.4rem;
+}
+
+.left .m-title p {
+  font-size: var(--font-size-18);
+  margin-bottom: 0.5vw;
+}
+
+.left .m-title > .line {
+  border-top: #000 2px solid;
+  margin-top: 2vw;
+  padding-top: 1.5vw;
+}
+
+/* 포인트: 키워드&타겟 */
+.left .m-point {
+  width: 100%;
+  height: 60vh;
+  background: url(./images/vans_1.png) no-repeat 98% 50% / 27%;
+
+  text-align: center;
+  padding-left: 5%;
+
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.left .m-point:hover {
+  background: url(./images/vans_1.gif) no-repeat 98% 50% / 27%;
+}
+
+.left .m-point .point {
+  width: 21vw;
+  height: 21vw;
+  border-radius: 50%;
+  border: #000 1px solid;
+  padding-top: 8%;
+
+  font-size: var(--font-size-15);
+  line-height: 1.4;
+}
+
+.left .m-point h5 {
+  font-size: var(--font-size-17);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.left .m-point .title {
+  font-size: var(--font-size-27);
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  line-height: 2.5vw;
+}
+
+.left .m-point .point:nth-child(2) {
+  background-color: #000;
+  color: #fff;
+}
+
+.left .m-point .point:nth-child(2):hover {
+  background-color: #000;
+  color: #f6d83a;
+}
+
+.left .m-point .point:first-child:hover {
+  background-color: #f6d83a;
+  color: #000;
+}
+
+/* before 어바웃반스 */
+
+.left .before {
+  width: 100%;
+  height: 100vh;
+  border-top: #000 solid 1px;
+  margin-top: 3vw;
+}
+
+.left .before h4 {
+  font-size: var(--font-size-45);
+  font-weight: 700;
+  margin: 3vw 3vw 8vw;
+}
+
+.left .before .before-img {
+  width: 70%;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.left .before .before-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.left .before .before-img .before-txt {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 15vw;
+  left: 85%;
+}
+
+.left .before .before-img .before-txt li {
+  background-color: #757575;
+  color: #fff;
+  font-size: var(--font-size-22);
+
+  border-bottom: #000 1px solid;
+
+  width: 25%;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 10px;
+
+  margin-bottom: 5px;
+}
+
+.left .before .before-img:hover .before-txt li {
+  background-color: #f6d83a;
+  color: #000;
+}
+
+/* direction */
+
+.left .direction {
+  width: 100%;
+}
+
+.left .direction .direction-title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.left .direction .direction-title .vertical-line {
+  width: 2.8125rem;
+  height: 13.625rem;
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.1875rem;
+
+  opacity: 0;
+
+  margin: 6vw auto;
+}
+
+.left .direction .direction-title .vertical-line.start {
+  opacity: 1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear forwards;
+}
+
+.left .direction .direction-title h2 {
+  font-family: var(--font-family-point);
+  font-size: var(--font-size-55);
+}
+
+.left .direction .direction-title h3 {
+  font-size: var(--font-size-64);
+  margin: 15px auto;
+}
+
+.left .direction .direction-title p {
+  font-size: var(--font-size-20);
+  line-height: 1.6;
+}
+
+.left .direction .direction-title .sub-p {
+  margin-top: 2vw;
+}
+
+.left .direction .direction-title .sub-p .margin-left {
+  margin-left: 10px;
+}
+
+.left .direction .renew-box {
+  width: 100%;
+  margin: 5vw auto 8vw;
+
+  position: relative;
+}
+
+.left .direction .renew-box .renew-txt {
+  line-height: 1.6;
+}
+
+.left .direction .renew-box .renew-txt .title {
+  font-size: var(--font-size-22);
+  font-weight: 700;
+}
+
+.left .direction .renew-box .renew-txt .big-title {
+  font-size: var(--font-size-25);
+  font-weight: 700;
+}
+
+.left .direction .renew-box .renew-txt .sub-title {
+  font-size: var(--font-size-22);
+  color: #757575;
+}
+
+.left .direction .renew-box .txt1 {
+  position: absolute;
+  top: 9%;
+  left: 60%;
+  width: 32%;
+}
+
+/* 스타일가이드 */
+.left .style {
+  width: 100%;
+  padding: 7vw 5vw 10vw;
+}
+
+.left .style h2 {
+  font-family: var(--font-family-point);
+  font-size: var(--font-size-58);
+}
+
+.left .style .line {
+  width: 40%;
+  height: 5vw;
+  text-indent: -99999px;
+  background: url(./images/Union2.png) no-repeat 65% 0 / 45%;
+}
+
+.left .style .box .title {
+  font-size: var(--font-size-28);
+  font-weight: 800;
+  letter-spacing: -0.7px;
+  text-transform: uppercase;
+}
+
+.left .style .box p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* box2 */
+/* 컬러팔레트 */
+
+.left .style .box2 {
+  width: 100%;
+  margin-top: 5vw;
+}
+
+.left .style .box2 .imgBox1 {
+  width: 100%;
+  margin-top: 3vw;
+  margin-left: -0.5vw;
+}
+
+.left .style .box2 .imgBox1 img {
+  width: 103%;
+}
+
+/* 타이포그라피 */
+.left .style .box3 {
+  margin-top: 5vw;
+}
+
+.left .style .box3 .typoBox {
+  width: 80%;
+  margin-top: 2vw;
+  display: flex;
+  gap: 10vw;
+}
+
+.left .style .box3 .typoBox .small {
+  font-family: var(--font-family-p);
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #757575;
+
+  margin-bottom: 15px;
+}
+
+.left .style .box3 .typo {
+  margin-top: 4vw;
+}
+
+.left .style .box3 .typo img {
+  margin-top: 2vw;
+}
+
+/* 솔루션 문제&해결 */
+.left .publishing {
+  width: 100%;
+}
+
+.left .publishing h3 {
+  width: 100%;
+  height: 12vw;
+  background-color: #000;
+  font-size: var(--font-size-32);
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+
+  display: grid;
+  place-content: center;
+  margin-bottom: 0.5vw;
+}
+
+.left .publishing .ox-box {
+  width: 100%;
+  display: flex;
+  margin: 7vw auto;
+  align-items: center;
+
+  font-size: var(--font-size-18);
+  line-height: 1.5;
+}
+
+.left .publishing .ox-box .line-center {
+  width: 0.6vw;
+  height: 33vw;
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.1875rem;
+}
+
+.left .publishing .ox-box .title {
+  font-family: var(--font-family-point);
+  font-size: var(--font-size-50);
+  text-align: center;
+  margin-bottom: 3.5vw;
+}
+
+.left .publishing .ox-box {
+  position: relative;
+}
+
+.left .publishing .ox-box .problem li {
+  width: 75%;
+  margin: 2vw auto 0.5vw;
+  display: flex;
+  gap: 27px;
+}
+
+.left .publishing .ox-box .problem li img {
+  width: 20px;
+  height: 24px;
+  margin-top: 5px;
+}
+
+/* 프로브럼 밑줄과 이벤트*/
+.left .publishing .ox-box .problem .line-pro {
+  width: 14vw;
+  height: 0.4vw;
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.1875rem;
+
+  position: absolute;
+  left: 16.5%;
+  top: 30%;
+
+  display: none;
+}
+
+.left .publishing .ox-box .problem .line-pro.start {
+  display: block;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear forwards;
+}
+
+@keyframes dash {
+  form {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.left .publishing .ox-box .solution {
+  position: relative;
+}
+
+.left .publishing .ox-box .solution li {
+  width: 70%;
+  margin: 2vw auto 0.5vw;
+  display: flex;
+  gap: 27px;
+}
+
+/* 솔루션 동그라미과 이벤트 */
+
+.left .publishing .ox-box .solution .line-sol {
+  width: 15.88vw;
+  height: 4vw;
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.1875rem;
+
+  position: absolute;
+  left: 26%;
+  top: 2%;
+
+  display: none;
+}
+
+.left .publishing .ox-box .solution .line-sol.start {
+  display: block;
+
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear forwards;
+}
+
+@keyframes dash {
+  form {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.left .publishing .ox-box .solution li img {
+  width: 31px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+/* -- 풋터 영역 -- */
+
+.left footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border-radius: 80px 0 0 0;
+}
+
+/* 리뷰 */
+.left footer .review {
+  width: 100%;
+  padding: 7vw 5vw;
+}
+
+.left footer .review h2 {
+  font-family: var(--font-family-point);
+  font-size: var(--font-size-58);
+}
+
+.left footer .review .line {
+  width: 40%;
+  height: 5vw;
+  text-indent: -99999px;
+  background: url(./images/Union2-wt.png) no-repeat 5% 0 / 50%;
+}
+
+.left footer .review .p-box p {
+  font-size: var(--font-size-18);
+  margin-bottom: 0.6vw;
+}
+
+/* 인포 */
+.left footer .f-info {
+  width: 90%;
+  height: 5vw;
+  border-top: 1px solid #fff;
+  margin: 0 auto;
+
+  font-size: var(--font-size-20);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left footer .f-info .all-git {
+  width: 95%;
+
+  display: flex;
+  align-items: center;
+}
+
+.left footer .f-info .all-git img {
+  width: 7vw;
+  transform: translateX(-0.4vw);
+  margin-right: 0.5vw;
+}
+
+.left footer .f-info .all-git li a {
+  display: block;
+  width: 120%;
+  padding-top: 0.7vw;
+  background: url(./images/go_arrow_wt.png) no-repeat 100% 50% / 12%;
+}
+
+.left footer .f-info .all-git li:last-child a {
+  display: block;
+  width: 120%;
+  margin-left: 1.5vw;
+  background: url(./images/go_arrow_wt.png) no-repeat 73% 50% / 6%;
+}
+
+.left footer .f-info .f-logo {
+  text-indent: -999999px;
+  width: 7vw;
+  background: url(./images/Haker-logo-wt.png) no-repeat 50% / 100%;
+}

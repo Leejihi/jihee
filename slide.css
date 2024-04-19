@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/* font-family: 'Knewave', 'Roboto', cursive, sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:wght@400;500;700&display=swap");
+
+/* Pretendard Variable */
+@import url("./common/pretendardvariable-dynamic-subset.css");
+
+/* 변수선언 */
+@import url(./common/variable.css);
+
+/* 캐릭터 슬라이더 myWeb3 */
+
+main .myWeb3 {
+  width: 100%;
+  height: 40%;
+  background-color: #000;
+  overflow: hidden;
+
+  padding-bottom: 5vw;
+  padding-left: 1vw;
+}
+
+.ag-container-shops {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.js-flickity-slider {
+  display: flex;
+}
+
+.ag-card-bg {
+  height: 100%;
+  width: 200%;
+  background-position: 50%;
+  background-size: cover;
+
+  position: absolute;
+  top: 0;
+  left: -55%;
+
+  -webkit-transition: height 0.6s;
+  -moz-transition: height 0.6s;
+  -o-transition: height 0.6s;
+  transition: height 0.6s;
+}
+
+.ag-shop-card_box-wrap {
+  padding: 15px;
+}
+
+.ag-shop-card_box {
+  background-color: #fff;
+
+  overflow: hidden;
+
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 35, 0.25);
+  -moz-box-shadow: 0 10px 20px 0 rgba(0, 0, 35, 0.25);
+  -o-box-shadow: 0 10px 20px 0 rgba(0, 0, 35, 0.25);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 35, 0.25);
+
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.ag-shop-card_box:hover .ag-shop-card-footer_link {
+  background-color: #000;
+}
+
+.ag-shop-card_body {
+  display: block;
+  height: 18vw;
+  width: 21.6vw;
+  background-position: 50%;
+  background-size: cover;
+
+  overflow: hidden;
+
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+
+  position: relative;
+}
+
+.ag-shop-card-body_link {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  z-index: 9;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
+  -o-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  -webkit-transition: top 0.4s;
+  -moz-transition: top 0.4s;
+  -o-transition: top 0.4s;
+  transition: top 0.4s;
+}
+
+.ag-shop-card-body_img {
+  max-width: 100%;
+}
+
+.ag-shop-card_footer {
+  padding: 15px 30px;
+  border: 0;
+  background-color: #fff;
+
+  position: relative;
+}
+
+.ag-shop-card-footer_title {
+  display: block;
+  line-height: 1.3;
+
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+
+.ag-shop-card-footer_products {
+  display: block;
+  line-height: 1.3;
+
+  font-size: 12px;
+}
+
+.ag-shop-card-footer_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  background-color: #5a5a5a;
+
+  position: absolute;
+  right: 30px;
+  top: 15px;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.ag-shop-card-footer_arrow {
+  max-width: 16px;
+}
+/* hover시 이미지 변경 */
+.cell01 .ag-card-bg {
+  background: url(./images/p_nef1.jpg) no-repeat 50% / cover;
+}
+
+.cell01:hover .ag-card-bg {
+  background: url(./images/p_nef2.jpg) no-repeat 50% / cover;
+}
+
+.cell02 .ag-card-bg {
+  background: url(./images/p_ebg1.jpg) no-repeat 50% / cover;
+}
+
+.cell02:hover .ag-card-bg {
+  background: url(./images/p_ebg2.jpg) no-repeat 50% / cover;
+}
+
+.cell03 .ag-card-bg {
+  background: url(./images/p_wox1.jpg) no-repeat 50% / cover;
+}
+
+.cell03:hover .ag-card-bg {
+  background: url(./images/p_wox2.jpg) no-repeat 50% / cover;
+}
+
+.cell04 .ag-card-bg {
+  background: url(./images/p_cake1.jpg) no-repeat 50% / cover;
+}
+
+.cell04:hover .ag-card-bg {
+  background: url(./images/p_cake2.jpg) no-repeat 50% / cover;
+}
+
+.cell05 .ag-card-bg {
+  background: url(./images/p_fun1.jpg) no-repeat 50% / cover;
+}
+
+.cell05:hover .ag-card-bg {
+  background: url(./images/p_fun2.jpg) no-repeat 50% / cover;
+}

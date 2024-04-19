@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/* font-family: 'Knewave', 'Roboto', cursive, sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:wght@400;500;700&display=swap");
+
+/* Pretendard Variable */
+@import url("./common/pretendardvariable-dynamic-subset.css");
+
+/* 변수선언 */
+@import url(./common/variable.css);
+
+/* mini pc버젼 */
+
+/****************** main ******************/
+/********* section1 .m-banner *********/
+
+main .m-banner h2 {
+  font-size: var(--font-size-180);
+}
+
+/********* section1 .m-banner txt *********/
+
+main .m-banner .m-txt h3 {
+  font-size: var(--font-size-28);
+}
+
+main .m-banner .m-txt .p-text p {
+  font-size: var(--font-size-24);
+  line-height: 45px;
+}
+
+main .m-banner .m-txt img {
+  width: 30%;
+  position: absolute;
+  bottom: 7.5vw;
+  left: 21%;
+}
+
+/* 버튼스타일 */
+.button {
+  font-size: var(--font-size-20);
+  line-height: 1.3rem;
+}
+
+/********* section2 .slide *********/
+
+main .slide .slidebox h2 {
+  font-size: var(--font-size-230);
+  letter-spacing: -5px;
+}
+
+/********* section4 .career *********/
+main .career {
+  padding-top: 15vw;
+}
+
+main .career h2 {
+  font-size: var(--font-size-120);
+}
+
+/* 스크롤시 선이 나타나는 이벤트 */
+
+main .career .obj {
+  top: 35vw;
+}
+
+main .career .careerBox {
+  margin-top: 43vw;
+}
+
+main .career .careerBox .txtBox .jobBox {
+  margin-bottom: 0.8vw;
+}
+
+main .career .careerBox .txtBox .jobBox h3 {
+  font-size: var(--font-size-50);
+}
+
+main .career .careerBox .txtBox .jobBox .p-txt .title {
+  font-size: var(--font-size-30);
+}
+
+main .career .careerBox .txtBox .jobBox .p-txt {
+  font-size: var(--font-size-14);
+}
+
+/********* section5 .skill *********/
+
+main .skill {
+  margin-top: 15vw;
+}
+
+main .skill .skillBox .tool {
+  padding: 70px 40px 30px;
+  border: 1px solid #000;
+  border-radius: 20px 0 0 0;
+}
+
+main .skill .skillBox .tool h3 {
+  font-size: var(--font-size-32);
+}
+
+main .skill .skillBox .tool .margin-top {
+  margin-top: 70px;
+}
+
+main .skill .skillBox .tool p {
+  font-size: var(--font-size-17);
+  line-height: var(--font-size-25);
+}
+
+main .skill .skillBox .tool .toolBox h4 {
+  font-size: var(--font-size-18);
+}
+
+/********* section6 .answer *********/
+main .answer {
+  margin-top: 15vw;
+}
+
+main .answer h2 {
+  font-size: var(--font-size-120);
+}
+
+/* 미디어쿼리 1000까지 */
+
+@media screen and (max-width: 1200px) {
+  /* section1 .m-banner */
+  main .m-banner {
+    margin-top: 15vw;
+  }
+
+  main .m-banner .m-txt img {
+    width: 35%;
+    position: absolute;
+    bottom: 8vw;
+    left: 18%;
+  }
+
+  /********* section2 .slide *********/
+
+  main .slide .slidebox h2 {
+    font-size: var(--font-size-180);
+  }
+
+  /********* section4 .career *********/
+
+  main .career .careerBox .txtBox .jobBox h3 {
+    font-size: var(--font-size-45);
+  }
+
+  main .career .careerBox .txtBox .jobBox .p-txt .title {
+    font-size: var(--font-size-28);
+  }
+
+  main .career .careerBox {
+    grid-template: repeat(6, 1fr) / 0.6fr 1fr;
+  }
+
+  main .career .careerBox .imgBox .careerImg {
+    width: 70%;
+  }
+
+  /********* section5 .skill *********/
+  main .skill {
+    margin-top: 5vw;
+  }
+
+  main .skill .speaker {
+    font-size: var(--font-size-27);
+  }
+
+  main .skill .speaker .line {
+    width: 37%;
+  }
+
+  main .skill .skillTitle img {
+    width: 10vw;
+    aspect-ratio: 3/4;
+    align-self: flex-end;
+  }
+
+  main .skill .skillTitle {
+    margin-top: 5vw;
+  }
+
+  main .skill .skillBox .tool {
+    padding: 60px 40px 30px;
+  }
+
+  main .skill .skillBox .tool .toolBox h4 {
+    font-size: var(--font-size-17);
+  }
+
+  main .skill .skillBox .tool .tool-adobe .adobe {
+    font-size: 1rem;
+    grid-template: repeat(2, 1fr) / 0.8fr 1fr;
+  }
+}
