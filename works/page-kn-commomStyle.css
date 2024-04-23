@@ -167,16 +167,3 @@ main {
   overflow-y: scroll;
   padding: 0;
 }
-
-/* 메인배너 */
-
-.left .m-title {
-  width: 90%;
-  margin: 3vw auto 8vw;
-}
-
-.left .m-title h3 {
-  font-size: var(--font-size-85);
-  font-weight: 700;
-  margin-bottom: -0.5vw;
-}
