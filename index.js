@@ -104,6 +104,11 @@ document
         "</span></div>")
   );
 
+// 어바웃미 클릭 이벤트가 발생했을 때 실행되는 코드
+document.getElementById("aboutMeButton").addEventListener("click", function () {
+  window.location.href = "https://leejihi.github.io/jihee/about/about";
+});
+
 // 슬라이드
 
 $(window).on("scroll", () => {
@@ -203,9 +208,4 @@ AOS.init();
 $(".up-btn").click(function () {
   $("html, body").animate({ scrollTop: 0 }, 500);
   return false;
-});
-
-// 어바웃미 클릭 이벤트가 발생했을 때 실행되는 코드
-document.getElementById("aboutMeButton").addEventListener("click", function () {
-  window.location.href = "https://leejihi.github.io/portfolio/about/about";
 });
